@@ -7,9 +7,9 @@ require.config({
     hbs: {
         templateExtension: 'html'
     },
-    shim: {
+    shim: {ddf
         underscore: {
-            exports: '_'
+            exsports: '_'
         },
         backbone: {
             deps: [
