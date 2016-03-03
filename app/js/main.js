@@ -7,7 +7,7 @@ require.config({
     hbs: {
         templateExtension: 'html'
     },
-    shim: {ddf
+    shim: {
         underscore: {
             exsports: '_'
         },
