@@ -41,5 +41,3 @@ require([
     var carView = new CarView({ model: car });
     $('body').append(carView.render().el);
 });
-
-'inmain.js'
