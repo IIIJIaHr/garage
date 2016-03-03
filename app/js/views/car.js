@@ -4,7 +4,6 @@ define([
     'backbone',
     'handlebars',
     'text!templates/cars.html',
-    dff
     'hbs!templates/cars'
 ], function($, _, Backbone, Handlebars, carsTemplate, carsTemplateHbs) {
     var CarView = Backbone.View.extend({
