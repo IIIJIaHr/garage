@@ -38,7 +38,6 @@ require([
     'jquery'
 ], function(Backbone, CarView, Car, $) {
     /*jshint nonew:false*/
-    console.log('dfnn');
     var car = new Car({ model: "Mers", mark: "w222" });
     var carView = new CarView({ model: car });
     $('body').append(carView.render().el);
