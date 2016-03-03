@@ -15,3 +15,5 @@ define([
     });
     return CarView;
 });
+
+'incar.js'
