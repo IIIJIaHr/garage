@@ -19,6 +19,7 @@
     "backbone": "^1.2.3",
     "bootstrap-css": "^3.3.6",
     "requirejs": "^2.1.22",
-    "require-handlebars-plugin": "^1.0.0"
+    "require-handlebars-plugin": "^1.0.0",
+    "handlebars": "^4.0.5"
   }
 }

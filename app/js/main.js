@@ -26,7 +26,7 @@ require.config({
         underscore: '../components/underscore/underscore',
         backbone: '../components/backbone/backbone',
         hbs: '../components/require-handlebars-plugin/hbs',
-        handlebars: '../components/handlebars/handlebars',
+        handlebars: '../components/require-handlebars-plugin/hbs/handlebars',
         text: '../components/text/text'
     }
 });
