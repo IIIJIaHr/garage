@@ -8,4 +8,4 @@ define([
         }
     });
     return Car;
-});
+});g
