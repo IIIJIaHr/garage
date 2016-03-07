@@ -1,20 +1,58 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Garage</title>
-    <!-- bower:css -->
-    <link rel="stylesheet" href="app/components/bootstrap-css/css/bootstrap.min.css" />
-    <!-- endbower -->
-    <link rel="stylesheet" href="app/css/common.css">
+  <meta charset="UTF-8">
+  <title>Garage</title>
+  <!-- bower:css -->
+  <link rel="stylesheet" href="app/components/bootstrap-css/css/bootstrap.min.css" />
+  <!-- endbower -->
+  <link rel="stylesheet" href="app/css/common.css">
 </head>
+
 <body>
-    <!-- bower:js -->
-    <script src="app/components/jquery/dist/jquery.js"></script>
-    <script src="app/components/underscore/underscore.js"></script>
-    <script src="app/components/backbone/backbone.js"></script>
-    <script src="app/components/bootstrap-css/js/bootstrap.min.js"></script>
-    <!-- endbower -->
-    <script data-main="app/js/main" src="app/components/requirejs/require.js"></script>
+  <!-- navbar top -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- sidebar -->
+      <div class="col-lg-2 col-md-2 sidebar">
+        <ul class="nav nav-sidebar">
+          <li role="presentation" class="active"><a href="">Lorem.</a></li>
+          <li role="presentation"><a href="">Inventore.</a></li>
+          <li role="presentation"><a href="">Odit.</a></li>
+          <li role="presentation"><a href="">Consectetur!</a></li>
+          <li role="presentation"><a href="">Soluta!</a></li>
+        </ul>
+      </div>
+      <!-- main -->
+      <div class="col-lg-offset-2 col-md-offset-2col-lg-10 col-md-10">
+        <div class="row cars">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bower:js -->
+  <script src="app/components/jquery/dist/jquery.js"></script>
+  <!-- endbower -->
+  <script data-main="app/js/main" src="app/components/requirejs/require.js"></script>
 </body>
+
 </html>

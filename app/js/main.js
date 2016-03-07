@@ -18,6 +18,10 @@ require.config({
             ],
             exports: 'Backbone'
         },
+        bootstrap: {
+            deps: ['jquery'],
+            exports: 'bootstrap'
+        }
     },
 
 
@@ -27,17 +31,29 @@ require.config({
         backbone: '../components/backbone/backbone',
         hbs: '../components/require-handlebars-plugin/hbs',
         handlebars: '../components/handlebars/handlebars',
+        bootstrap: '../components/bootstrap-css/js/bootstrap.min'
     }
 });
 
 require([
+    'jquery',
     'backbone',
-    'views/car',
     'models/car',
-    'jquery'
-], function(Backbone, CarView, Car, $) {
+    'views/car',
+    'collections/cars',
+    'views/cars',
+    'bootstrap'
+], function($, Backbone, Car, CarView, Cars, CarsView) {
+
     /*jshint nonew:false*/
-    var car = new Car({ model: "Mers", mark: "w222" });
-    var carView = new CarView({ model: car });
-    $('body').append(carView.render().el);
+    var car1 = new Car({ model: "Mers", mark: "w222" });
+    var car2 = new Car({ model: "Mers", mark: "w222" });
+    var car3 = new Car({ model: "Mers", mark: "w222" });
+    var carView = new CarView({model: car1});
+    console.log(carView.render().el);
+    var coll = new Cars();
+    coll.add(car1);
+    coll.add(car2);
+    coll.add(car3);
+    var carsView = new CarsView({collection: coll});
 });
